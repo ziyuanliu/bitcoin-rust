@@ -1,0 +1,15 @@
+[package]
+name = "bitcoin-rs"
+version = "0.1.0"
+license = "GPL-3.0"
+description = "a rewrite of Parity bitcoin client for educational purposes."
+authors = ["Ziyuan Liu <ziyuan.liu@gmail.com>"]
+
+[dependencies]
+chain = { path = "chain" }
+primitives = { path = "primitives" }
+
+
+[[bin]]
+path = "pbtc/main.rs"
+name = "pbtc"

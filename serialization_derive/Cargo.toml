@@ -1,0 +1,15 @@
+[package]
+name = "serialization_derive"
+version = "0.1.0"
+authors = ["Ziyuan Liu <ziyuan.liu@gmail.com>"]
+
+[lib]
+name = "serialization_derive"
+proc-macro = true
+
+[dependencies]
+syn = "0.11.11"
+quote = "0.3.15"
+
+[dev-dependencies]
+serialization = { path = "../serialization" }
