@@ -4,4 +4,9 @@ version = "0.1.0"
 authors = ["Ziyuan Liu <ziyuan.liu@gmail.com>"]
 
 [dependencies]
+bitcrypto = { path = "../crypto" }
 primitives = { path = "../primitives" }
+serialization = { path = "../serialization" }
+serialization_derive = { path = "../serialization_derive" }
+rustc-serialize = "0.3"
+heapsize = "0.4"
