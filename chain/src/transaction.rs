@@ -78,7 +78,7 @@ pub struct TransactionOutput {
 impl Default for TransactionOutput {
     fn default() -> Self {
         TransactionOutput {
-        	value: 0xffffffff,
+        	value: 0xffffffffffffffffu64,
         	script_pubkey: Bytes::default(),
         }
     }

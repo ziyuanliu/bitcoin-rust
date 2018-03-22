@@ -22,7 +22,7 @@ impl Public {
             	public.copy_from_slice(data);
             	Ok(Public::Compressed(public))
             },
-            66 => {
+            65 => {
             	let mut public = H520::default();
             	public.copy_from_slice(data);
             	Ok(Public::Normal(public))
