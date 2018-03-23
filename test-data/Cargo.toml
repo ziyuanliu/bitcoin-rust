@@ -1,0 +1,12 @@
+[package]
+name = "test-data"
+version = "0.1.0"
+authors = ["Ziyuan Liu <ziyuan.liu@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+
+chain = { path = "../chain"  }
+primitives = { path = "../primitives" }
+serialization = { path = "../serialization" }
+script = { path = "../script" }
