@@ -5,7 +5,7 @@ use {Serializable, Deserializable, Error, Reader, Stream};
 pub struct List<T>(Vec<T>);
 
 impl<T> List<T> where T: Serializable + Deserializable {
-    pub fn new(vec: Vec<T>) -> Self {
+    pub fn from(vec: Vec<T>) -> Self {
         List(vec)
     }
 

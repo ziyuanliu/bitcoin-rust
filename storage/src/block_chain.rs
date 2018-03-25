@@ -19,7 +19,7 @@ pub trait BlockChain {
     fn rollback_best(&self) -> Result<H256, Error>;
 
     /// Canonize block with given hash
-    fn canonize(&self, block_hash: H256) -> Result<(), Error>;
+    fn canonize(&self, block_hash: &H256) -> Result<(), Error>;
 
     /// decanonize best block
     fn decanonize(&self) -> Result<H256, Error>;

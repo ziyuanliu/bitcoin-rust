@@ -22,10 +22,10 @@ pub trait ConfigStore {
 /// Blockchain storage interface
 pub trait Store: AsSubstore {
     /// get the best block
-    fn best_block(&self) -> &BestBlock;
+    fn best_block(&self) -> BestBlock;
 
     /// get the best header
-    fn best_header(&self) -> &BlockHeader;
+    fn best_header(&self) -> BlockHeader;
 
     /// get the difficulty
     fn difficulty(&self) -> f64;
