@@ -117,7 +117,7 @@ impl AsMut<[u8]> for Bytes {
 
 // wrapper around Vec<u8> which represents associated types
 #[derive(Default, PartialEq, Clone)]
-struct TaggedBytes<T> {
+pub struct TaggedBytes<T> {
     bytes: Bytes,
     label: marker::PhantomData<T>,
 }
