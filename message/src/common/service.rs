@@ -14,7 +14,7 @@ impl From<u64> for Services {
 }
 
 impl Services {
-    pub fn networ(&self) -> bool {
+    pub fn networt(&self) -> bool {
         self.bit_at(0)
     }
 
