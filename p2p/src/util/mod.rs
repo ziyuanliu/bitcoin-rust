@@ -1,11 +1,11 @@
 mod internet_protocol;
-mod interval;
+pub mod interval;
 mod node_table;
-mod nonce;
+pub mod nonce;
 mod peer;
 mod response_queue;
 mod synchronizer;
-mod time;
+pub mod time;
 
 
 pub use self::internet_protocol::InternetProtocol;

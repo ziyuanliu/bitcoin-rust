@@ -6,8 +6,8 @@ pub type PeerId = usize;
 
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub enum Direction {
-    Variant1,
-    Variant2,
+    Inbound,
+    Outbound,
 }
 
 #[derive(Debug, PartialEq, Clone)]

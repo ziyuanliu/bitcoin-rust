@@ -27,4 +27,10 @@ mod config;
 mod event_loop;
 mod p2p;
 
+pub use config::Config;
+pub use net::Config as NetConfig;
+pub use p2p::{P2P, Context};
+pub use event_loop::{event_loop, forever};
 pub use primitives::{hash, bytes};
+pub use util::{NodeTableError, PeerId, PeerInfo, InternetProtocol, Direction};
+pub use protocol::{InboundSyncConnection, InboundSyncConnectionRef, OutboundSyncConnection, OutboundSyncConnectionRef, LocalSyncNode, LocalSyncNodeRef};
