@@ -379,6 +379,11 @@ impl<F> TransactionInputBuilder<F> where F: Invoke<chain::TransactionInput> {
         self
     }
 
+    pub fn signature_bytes(mut self, sig: Bytes) -> Self {
+		self.signature = sig;
+		self
+	}
+
     pub fn signature_with_sigops(mut self, sigops: usize) -> Self {
 		let mut builder = ScriptBuilder::default();
 		for _ in 0..sigops {
